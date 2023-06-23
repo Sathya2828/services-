@@ -1,0 +1,24 @@
+<h1>{{title}}</h1>
+<table class="table table-bordered">
+    <tr class="bg-primary">
+        <th>Id</th>
+        <th>Name</th>
+        <th>City</th>
+        <th>Salary</th>
+        <th>DOB</th>
+        <th>UserName</th>
+        <th>Street</th>
+        <th>City</th>
+    </tr>
+    <tr *ngFor ="let user of users">
+        <td>{{user.id}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.city}}</td>
+        <td>{{user.salary}}</td>
+        <td>{{user.dob}}</td>
+        <td>{{user.username}}</td>
+        <td>{{user.address.street}}</td>
+        <td>{{user.address.city}}</td>
+
+    </tr>
+</table>
